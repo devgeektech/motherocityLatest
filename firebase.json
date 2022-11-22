@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "motherocityapp",
+  "private_key_id": "f819d9c545f9b237f710f40d3ceb9abebe9ade96",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCFNtIcJuEHiWHo\nxAspkzp0rQYgDOZcbsdi6XgZKvQh20gUE5tw1uwYNPYoonWc+2sHF+X+Duh1GJcO\nJ+w+S3RbtLg7aZ7BO56wKbKoh3P7zgNZXibrMJ0KMs59hC+UqnE4PUrxvqMc1Hhu\nixfmfVTI3YBWDzimt1QaWE2BUuRUbp0hdMY7MJ1kp4vNtW87D7RNbRPB/V5qwQMB\nEa5/Bn0HX+8EpEohuM8BmsKdwiKcHKU4Tl03LiYAxUYdebNf/Snj8S/Jb1oUFbFM\nF+macdxouq+X7t6+R918ajpx0INaMG7thJXVMV3onsOC1utF6tSHOoLEQJkOdpAh\nl6D/bhnhAgMBAAECggEAA7QgyrCzx03s8X/QU+JEkPl9wuq65ZlcnKHTMYdvwMh4\nADtkkiI+j4R67smoAZKdoNWLstjbIoTJz9ZhL4DxaeqMB/ZVeCe6P2l0XrI/4bGC\nRzP6euXXyuCbXDLecAieU9cD6DVRs3+ufrvKIQHNZ3V9j7719zAgA+i+NGUPpS+B\nFO0iGuzcqhruU7hQmPhSxlvLIvgoTig2Xac+fGmrYxAY043HN2bB+wTSj4zLzDgr\neDFuIU0YB4fAG0iCMQvnrx7Aqs+VI5Oy/Ube5WammcobJrVyN8GcR8vAccP+dvvn\nI5TQ1byytqtVbIs0gq9CfVSMLsxdHV2j1XDsEPwQEQKBgQC5/L0GSTqpUzjclrlI\nWwNTmaQ47DdD+rsyekWpgxoX1FXP6AM0HY4jHRaREL8nFrRBFaxhNUWawWNFZPdK\nIQbzKaKBxbtcO1ak2isBMRPV6ABh2Ohs3v96QMEDIyj4fMLBeJgBQQZ5JxZFRWNq\nBthL/Oa574S2gALNDo64DnaLMQKBgQC3XG5VhFKVQu+8CmHxiG5plLc2xeQht4sn\nnJFb0UTBDcYtzttEjJ0OHbXFJ8Qsi3HvqZIkOm2fESdyniHEpG7lt5XUOvjsN8PB\nPKbRYlOwivAJJ8xZfAsmmBRHS6RyBp9Re+ueEFsyipvKPdHF1+8GGYSdf+RDwBMN\nZXRxtHRtsQKBgHKMgy9X8tVO+HqEKmGyDH505nxYoEEyMBGK1VTt9igvExsV3sM+\nYMinpbp7AgBlL2fWnXDRiqkh6q5W3Se+57TkM76Rti+8LEUkSdBWFc1tMq8RFTXY\nsqjtMPNpuFYzIRBf4d8D2aTMuh63+d7XkGhcvw5NwwNUHGWHTcd2wPRBAoGAEdpZ\nD9CDbe8HgoqMQMUk4vjM4fNgo/vH+8Jd0M/OXvGlYx5p8QGz5QT1hs25ZxDotgoP\npaFevQchjSJibVAJUCqQ1woq5G0FjVIHeAmX1m+gsXODjQ7r0wUprEtsJoIIjxl+\ntnQnPQOL6aQdQaMlrbVcWS1znzkbYcmIDe4hC/ECgYAWTU7lFpIFf04j27zcAYvc\nPBnxub7qAbTcbjhRVLibTqLXM8K9glZVhOkJrxjTWF/TkZDd5TWh3D6YqgavewXU\nBFhx7l4wKyvcZq998BAWbPrTCK75WUMJk883ikQwmLcrUgyuUW8xudnVxqyvgRLD\nTQTLO00M5Y4RmVOjBZQtUQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-roipx@motherocityapp.iam.gserviceaccount.com",
+  "client_id": "114686117558840359068",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-roipx%40motherocityapp.iam.gserviceaccount.com"
+}

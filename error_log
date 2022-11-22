@@ -1,0 +1,215 @@
+[20-Jul-2022 11:04:41 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 173
+[20-Jul-2022 11:04:48 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 173
+[20-Jul-2022 11:05:08 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 173
+[20-Jul-2022 11:05:11 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 173
+[20-Jul-2022 11:05:11 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 173
+[20-Jul-2022 11:05:34 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 173
+[20-Jul-2022 11:05:45 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 173
+[20-Jul-2022 11:05:54 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 173
+[20-Jul-2022 11:06:15 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:06:15 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:06:15 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:06:15 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:06:15 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CodeIgniter\CodeIgniter::__construct() must be an instance of Config\App, null given, called in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 145 and defined in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php:159
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(145): CodeIgniter\CodeIgniter->__construct(NULL)
+#1 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter(NULL, false)
+#2 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('codeigniter', Array)
+#3 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(140): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', NULL)
+#4 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter()
+#5 / in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php on line 159
+[20-Jul-2022 11:07:20 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CodeIgniter\CodeIgniter::__construct() must be an instance of Config\App, null given, called in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 145 and defined in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php:159
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(145): CodeIgniter\CodeIgniter->__construct(NULL)
+#1 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter(NULL, false)
+#2 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('codeigniter', Array)
+#3 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(140): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', NULL)
+#4 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter()
+#5 / in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php on line 159
+[20-Jul-2022 11:07:22 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CodeIgniter\CodeIgniter::__construct() must be an instance of Config\App, null given, called in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 145 and defined in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php:159
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(145): CodeIgniter\CodeIgniter->__construct(NULL)
+#1 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter(NULL, false)
+#2 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('codeigniter', Array)
+#3 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(140): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', NULL)
+#4 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter()
+#5 / in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php on line 159
+[20-Jul-2022 11:07:23 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CodeIgniter\CodeIgniter::__construct() must be an instance of Config\App, null given, called in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 145 and defined in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php:159
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(145): CodeIgniter\CodeIgniter->__construct(NULL)
+#1 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter(NULL, false)
+#2 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('codeigniter', Array)
+#3 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(140): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', NULL)
+#4 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter()
+#5 / in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php on line 159
+[20-Jul-2022 11:07:24 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CodeIgniter\CodeIgniter::__construct() must be an instance of Config\App, null given, called in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 145 and defined in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php:159
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(145): CodeIgniter\CodeIgniter->__construct(NULL)
+#1 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter(NULL, false)
+#2 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('codeigniter', Array)
+#3 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(140): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', NULL)
+#4 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter()
+#5 / in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php on line 159
+[20-Jul-2022 11:07:24 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CodeIgniter\CodeIgniter::__construct() must be an instance of Config\App, null given, called in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 145 and defined in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php:159
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(145): CodeIgniter\CodeIgniter->__construct(NULL)
+#1 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter(NULL, false)
+#2 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('codeigniter', Array)
+#3 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(140): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', NULL)
+#4 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter()
+#5 / in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php on line 159
+[20-Jul-2022 11:07:24 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CodeIgniter\CodeIgniter::__construct() must be an instance of Config\App, null given, called in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 145 and defined in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php:159
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(145): CodeIgniter\CodeIgniter->__construct(NULL)
+#1 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter(NULL, false)
+#2 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('codeigniter', Array)
+#3 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(140): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', NULL)
+#4 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter()
+#5 / in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php on line 159
+[20-Jul-2022 11:07:25 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CodeIgniter\CodeIgniter::__construct() must be an instance of Config\App, null given, called in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 145 and defined in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php:159
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(145): CodeIgniter\CodeIgniter->__construct(NULL)
+#1 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter(NULL, false)
+#2 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('codeigniter', Array)
+#3 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(140): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', NULL)
+#4 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter()
+#5 / in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php on line 159
+[20-Jul-2022 11:07:25 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CodeIgniter\CodeIgniter::__construct() must be an instance of Config\App, null given, called in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 145 and defined in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php:159
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(145): CodeIgniter\CodeIgniter->__construct(NULL)
+#1 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter(NULL, false)
+#2 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('codeigniter', Array)
+#3 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(140): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', NULL)
+#4 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter()
+#5 / in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php on line 159
+[20-Jul-2022 11:10:39 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:10:39 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:10:39 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:10:39 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:10:39 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CodeIgniter\CodeIgniter::__construct() must be an instance of Config\App, null given, called in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 145 and defined in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php:159
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(145): CodeIgniter\CodeIgniter->__construct(NULL)
+#1 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter(NULL, false)
+#2 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('codeigniter', Array)
+#3 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(140): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', NULL)
+#4 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter()
+#5 / in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php on line 159
+[20-Jul-2022 11:10:41 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:10:41 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:10:41 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:10:41 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:10:41 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CodeIgniter\CodeIgniter::__construct() must be an instance of Config\App, null given, called in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 145 and defined in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php:159
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(145): CodeIgniter\CodeIgniter->__construct(NULL)
+#1 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter(NULL, false)
+#2 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('codeigniter', Array)
+#3 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php(140): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', NULL)
+#4 /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/BaseService.php(251): CodeIgniter\Config\Services::codeigniter()
+#5 / in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/CodeIgniter.php on line 159
+[20-Jul-2022 11:11:38 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:11:38 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:11:38 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:11:38 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:12:06 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:12:06 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:12:06 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:12:06 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:15:52 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:15:52 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:15:52 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:15:52 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:18:22 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:18:22 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:18:22 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:18:22 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:18:53 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:18:53 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:18:53 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:18:53 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:19:03 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:19:03 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:19:03 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:19:03 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:19:06 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:19:06 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:19:06 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:19:06 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:21:51 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:21:51 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:21:51 UTC] PHP Warning:  include_once(Array): failed to open stream: No such file or directory in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:21:51 UTC] PHP Warning:  include_once(): Failed opening 'Array' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Common.php on line 665
+[20-Jul-2022 11:29:06 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 143
+[20-Jul-2022 11:29:11 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/webwiqpq/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 143
+[20-Jul-2022 11:49:40 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/vitalqzv/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 143
+[20-Jul-2022 11:49:43 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/vitalqzv/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 143
+[20-Jul-2022 11:50:48 UTC] PHP Parse error:  syntax error, unexpected '=' in /home1/vitalqzv/public_html/WEB01/LinkedInApp/system/Config/Services.php on line 143
+[20-Jul-2022 12:13:50 UTC] PHP Fatal error:  Default value for parameters with a string type can only be string or NULL in /home1/vitalqzv/public_html/WEB01/LinkedInApp/system/API/ResponseTrait.php on line 124
+[20-Jul-2022 12:14:05 UTC] PHP Fatal error:  Default value for parameters with a string type can only be string or NULL in /home1/vitalqzv/public_html/WEB01/LinkedInApp/system/API/ResponseTrait.php on line 124
+[27-Jul-2022 01:22:58 America/Chicago] PHP Fatal error:  Trait 'App\Controllers\Api\CommonTrait' not found in /home1/vitalqzv/public_html/WEB01/streamingApp/app/Controllers/Api/Users.php on line 14
+[08-Sep-2022 08:42:02 America/Chicago] PHP Fatal error:  During class fetch: Uncaught ParseError: syntax error, unexpected 'echo' (T_ECHO) in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/User_detail.php:53
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home1/webwiqpq...')
+#1 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php(10): spl_autoload_call('App\\Controllers...')
+#4 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(518): include_once('/home1/webwiqpq...')
+#5 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('Api/Users/get_u...')
+#6 /home1/webwiqpq/public_html/WEB01/Motherocity/sy in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php on line 10
+[08-Sep-2022 08:43:01 America/Chicago] PHP Fatal error:  During class fetch: Uncaught ParseError: syntax error, unexpected 'echo' (T_ECHO) in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/User_detail.php:53
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home1/webwiqpq...')
+#1 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php(10): spl_autoload_call('App\\Controllers...')
+#4 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(518): include_once('/home1/webwiqpq...')
+#5 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('Api/Users/get_u...')
+#6 /home1/webwiqpq/public_html/WEB01/Motherocity/sy in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php on line 10
+[08-Sep-2022 08:43:05 America/Chicago] PHP Fatal error:  During class fetch: Uncaught ParseError: syntax error, unexpected 'echo' (T_ECHO) in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/User_detail.php:53
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home1/webwiqpq...')
+#1 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php(10): spl_autoload_call('App\\Controllers...')
+#4 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(518): include_once('/home1/webwiqpq...')
+#5 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('Api/Users/get_u...')
+#6 /home1/webwiqpq/public_html/WEB01/Motherocity/sy in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php on line 10
+[08-Sep-2022 08:43:06 America/Chicago] PHP Fatal error:  During class fetch: Uncaught ParseError: syntax error, unexpected 'echo' (T_ECHO) in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/User_detail.php:53
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home1/webwiqpq...')
+#1 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php(10): spl_autoload_call('App\\Controllers...')
+#4 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(518): include_once('/home1/webwiqpq...')
+#5 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('Api/Users/get_u...')
+#6 /home1/webwiqpq/public_html/WEB01/Motherocity/sy in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php on line 10
+[08-Sep-2022 08:43:17 America/Chicago] PHP Fatal error:  During class fetch: Uncaught ParseError: syntax error, unexpected 'echo' (T_ECHO) in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/User_detail.php:53
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home1/webwiqpq...')
+#1 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php(10): spl_autoload_call('App\\Controllers...')
+#4 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(518): include_once('/home1/webwiqpq...')
+#5 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('Api/Users/get_u...')
+#6 /home1/webwiqpq/public_html/WEB01/Motherocity/sy in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php on line 10
+[08-Sep-2022 08:44:31 America/Chicago] PHP Fatal error:  Trait 'App\Controllers\API\User_detail' not found in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php on line 11
+[08-Sep-2022 08:44:38 America/Chicago] PHP Fatal error:  Trait 'App\Controllers\API\User_detail' not found in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php on line 11
+[08-Sep-2022 08:45:42 America/Chicago] PHP Fatal error:  Trait 'App\Controllers\API\User_detail' not found in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php on line 11
+[08-Sep-2022 08:45:44 America/Chicago] PHP Fatal error:  Trait 'App\Controllers\API\User_detail' not found in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php on line 11
+[08-Sep-2022 08:45:47 America/Chicago] PHP Fatal error:  During class fetch: Uncaught ParseError: syntax error, unexpected 'echo' (T_ECHO) in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/User_detail.php:53
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home1/webwiqpq...')
+#1 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php(11): spl_autoload_call('App\\Controllers...')
+#4 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(518): include_once('/home1/webwiqpq...')
+#5 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('Api/Users/get_u...')
+#6 /home1/webwiqpq/public_html/WEB01/Motherocity/sy in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php on line 11
+[08-Sep-2022 08:45:50 America/Chicago] PHP Fatal error:  During class fetch: Uncaught ParseError: syntax error, unexpected 'echo' (T_ECHO) in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/User_detail.php:53
+Stack trace:
+#0 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home1/webwiqpq...')
+#1 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php(11): spl_autoload_call('App\\Controllers...')
+#4 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(518): include_once('/home1/webwiqpq...')
+#5 /home1/webwiqpq/public_html/WEB01/Motherocity/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('Api/Users/get_u...')
+#6 /home1/webwiqpq/public_html/WEB01/Motherocity/sy in /home1/webwiqpq/public_html/WEB01/Motherocity/app/Controllers/Api/Users.php on line 11
