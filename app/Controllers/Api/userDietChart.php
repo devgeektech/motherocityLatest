@@ -291,14 +291,14 @@ class userDietChart extends ResourceController {
           while($totalWeek > 0){ 
               $lastDate = date('Y-m-d', strtotime("next sunday", strtotime($delivery_date)));
             
-              $get_week_data =  $this->common_model->GetWeeklyData($userID, $delivery_date, $lastDate, $table_name); 
-              
+              $get_week_data =  $this->common_model->GetWeeklyData($delivery_date, $lastDate, $table_name); 
+              print_r($get_week_data);die;
               $dateCheck = $dayData = [];  
               $i_n = 0;
               foreach($get_week_data as $value)
               { 
                 $dayDate = date('Y-m-d',strtotime($value->created_at));
-            // print_r($dayDate);die;
+        
                 if (!in_array($dayDate, $dateCheck))
                 {
                   $day_data =  $this->common_model->GetDayData($userID, $dayDate, $table_name); 

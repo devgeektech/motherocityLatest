@@ -70,7 +70,7 @@ class Users extends ResourceController {
 			if($row){
 				$result = array();
 					foreach($row as $key => $value){
-						array_push($result, $value);
+						array_push($result, $value);	
 					}
 					$output['status']= 1; 
 					$output['message']='success';
@@ -3393,4 +3393,79 @@ office_hours:jyvvu*/
           return $e->getMessage(); 
         }  
 } 	
+
+public function forgetPasswordWeb(){
+	$this->validation->setRule('email','Email','trim|required');
+	if($this->validation->withRequest($this->request)->run()==false) {
+		$output['errors']=$this->validation->getErrors();
+		$output['message']='invalid email';
+		$output['status']= 2;     
+		return $this->respond($output);
+	}
+     
+	try{
+		$to = $this->request->getVar('email');
+		$token = bin2hex(\CodeIgniter\Encryption\Encryption::createKey(32));
+		$user = $this->common_model->GetAllData('users',array('email'=>$to));
+	
+		if($user) {
+			$insertData['password_reset_token'] = $token;
+			$run = $this->common_model->UpdateData('users',array('email'=>$to), $insertData);
+        	$messageBody = site_url('index.php/web-change-password/?token='.$token);
+			
+			//send email
+			$email = \Config\Services::email();
+			$email->setTo($to);
+			$email->setFrom('saurabhnakoti.geektech@gmail.com', 'Reset Password'); 
+			$email->setSubject('Password Reset');
+			$email->setMessage($messageBody);
+		//	print_r($email);die;
+			if ($email->send()) 
+			{
+				$output['data'] = 'true';
+				$output['status']= 1;
+				$output['message']= 'Email successfully send';
+				return $this->respond($output);
+			} 
+			else 
+			{
+				 $data = $email->printDebugger(['headers']);
+				 print_r($data);
+				$output['data'] = 'false';
+				$output['status']= 0;
+				$output['message']= 'something went wrong';
+				return $this->respond($output);
+			}
+
+		}else {
+			$output['data'] = 'null';
+			$output['status']= 0;
+			$output['message']= 'data not found!';
+			return $this->respond($output);
+		}
+	}
+	catch (\Exception $e){				
+		return $e->getMessage();
+	}
+}
+
+public function changePassword(){
+	
+	return view('admin/change-password');
+
+}
+
+public function updatePassword(){ 
+	$token['token'] = $this->request->getVar('token');		
+    $Password['Password'] = $this->request->getVar('Password');
+    $confirmpassword['confirmpassword'] = $this->request->getVar('confirmpassword'); 
+	if ($Password){  
+	$updatePassword = $this->common_model->UpdatePassword('users', array("token"=>$token),array("password"=>$Password));   
+		echo "Password updated successfully !";
+	 }
+	 else
+	 {
+		echo "error occur";
+	 }
+}
 }

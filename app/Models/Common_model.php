@@ -861,5 +861,46 @@ class Common_model extends Model {
     }
     return [];
   }
+ 
+ 
+  public function UpdatePassword($table,$token,$Password) { 
+    $builder = $this->db->table($table);
+    $builder->where($token);
+    $builder->update($Password);  
+    return ($this->db->affectedRows() > 0)?true:true;
+  } 
 
+
+  public function GetDayDataTipsJournals($startdate = '', $table = '' )
+  { 
+    $builder = $this->db->table($table);
+    $builder->select('*');
+    if(!empty($startdate)){
+      $builder->where("DATE(created_at) =",$startdate); 
+    } 
+    $data = $builder->get()->getResult();  
+    
+    if(count($data)){
+      return $data;
+    }
+    return [];
+  }
+
+  public function GetWeeklyDataTipsJournals($week = '', $days = '', $table = '' )
+  { 
+    
+    $builder = $this->db->table($table);
+    $builder->select('*');
+    if(!empty($week)){
+      $builder->where("week_no =",$week); 
+    }
+    if(!empty($days)){
+      $builder->where("days =",$days); 
+    } 
+    $data = $builder->get()->getResult();  
+    if(count($data)){
+      return $data;
+    }
+    return [];
+  }
 }

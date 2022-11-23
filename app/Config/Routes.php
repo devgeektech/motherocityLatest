@@ -33,6 +33,10 @@ $routes->setAutoRoute(true);
 //$routes->get('/', 'Home::index');
 
 /*APP-----------------------------------------------*/
+
+$routes->get('web-change-password', 'Api\Users::changePassword');
+$routes->post('updatePassword', 'Api\Users::updatePassword');
+
 $routes->group('api', ['namespace' => 'App\Controllers\Api'], static function ($routes) {
 	
 	$routes->get('get-experties', 'Users::getExperties');
@@ -88,6 +92,12 @@ $routes->group('api', ['namespace' => 'App\Controllers\Api'], static function ($
     $routes->get('specialists-profiles', 'Users::specialistsList');
     $routes->get('all-blogs', 'Users::getAllBlogs');
     $routes->put('saveDeviceToken', 'Users::saveDeviceToken');
+    $routes->post('forgetPasswordWeb', 'Users::forgetPasswordWeb');
+   
+     //Tip Journals
+
+     $routes->get('tipsJournal', 'Reminder::tipsJournal');
+
     
     //Reminders
     $routes->post('reminder/add', 'Reminder::add');

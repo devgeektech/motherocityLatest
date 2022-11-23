@@ -232,4 +232,93 @@ class Reminder extends ResourceController {
 		}
 		
 	}
+
+	public function tipsJournal( $msg = 'success'){ 
+	
+		$table_name= 'tips_management';
+		$userID = $this->request->getVar('user_id'); 
+		if(empty($userID)){
+			return $this->respond(["user id required"]); 
+		} 
+		try{    
+			$builder = $this->db->table("users as twd");
+			$builder->select('delivery_date')->where('twd.id', $userID);
+			$delivery_date = $builder->get()->getResult();  
+			$yeardstartdate = isset($delivery_date[0]->delivery_date)? $delivery_date[0]->delivery_date : date("Y-m-d"); 
+				
+			$today_date = date('Y-m-d');  
+			$monday = date('Y-m-d', strtotime("last monday", strtotime($yeardstartdate)));
+			$sunday = date('Y-m-d', strtotime("next sunday", strtotime($yeardstartdate)));  
+			
+			
+			$i = 1;
+			$j = 0;
+			$k = 0;
+			$count = 0;
+			$weekData = [];
+			$dayData = [];
+			$totalWeek = 53; 
+			 
+			$delivery_date = $yeardstartdate; 
+			
+			if($delivery_date){
+				while($totalWeek > 0){ 
+					$lastDate = date('Y-m-d', strtotime("next sunday", strtotime($delivery_date))); 
+					// echo $difference_btween_strtandend = $lastDate - $delivery_date;
+					$diff = abs(strtotime($lastDate) - strtotime($delivery_date));
+					$years = floor($diff / (365*60*60*24));
+					$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+					$days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+					$days = $days + 1;
+
+					$newWeekArray = $dayData = [];  
+					$day_i = 0; 
+					$delivery_date_day = $delivery_date; 
+					for($day=1; $day <= $days; $day++){
+						
+						$get_week_data =  $this->common_model->GetWeeklyDataTipsJournals($i, $day, $table_name);  
+ 
+						if($day > 1){
+							$delivery_date_day = date("Y-m-d", strtotime("+1 day", strtotime($delivery_date_day)));
+						}
+						
+						$dayData["date"] = $delivery_date_day;
+						$dayData["week"] = $i;
+						$dayData["day"] = $day;
+						$dayData["data"] = $get_week_data;
+						
+						$newWeekArray[] = $dayData; 
+					}
+					    
+				
+					if(strtotime($today_date) >= strtotime($delivery_date) && strtotime($today_date) <= strtotime($lastDate)){
+						$currentDay = true;
+					}else{
+						$currentDay = false;
+					}
+			 
+					if(!empty($newWeekArray)){
+						$newWeekData = array();
+						$newWeekData[0]["weekNumber"] = "Week ".$i;
+						$newWeekData[0]["weekStartDate"] = $delivery_date;
+						$newWeekData[0]["weekEndDate"] = $lastDate;
+						$newWeekData[0]["currentWeek"] = $currentDay;
+						$newWeekData[0]["days"] = $newWeekArray;
+						$weekData[] = $newWeekData;
+					}  
+					$i++; 
+					$delivery_date = date("Y-m-d", strtotime("+1 day", strtotime($lastDate)));
+					$totalWeek--;
+				}
+				$output['data'] = $weekData; 
+			} 
+
+			$output['message'] = $msg; 
+			$output['code'] = 200; 
+			return $this->respond($output); 
+		}
+		catch (\Exception $e) {
+			return $e->getMessage(); 
+		}  
+	}
 }

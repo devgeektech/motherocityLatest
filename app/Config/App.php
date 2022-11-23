@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://3.212.34.234/';
+    public $baseURL = 'http://localhost/motherocity-app/';
 
     /**
      * --------------------------------------------------------------------------
