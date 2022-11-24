@@ -34,12 +34,18 @@
                             <form id="edit_privacy" method="post" action="#" onsubmit="return edit_privacy(this , <?= $privacy['id']; ?>)" >
                                 <div class="col-md-12 py-3">
                                     <div>
+                                        
                                         <label>Title</label>
                                         <input type="text" class="form-control" name="tab1_title" value="<?= $privacy['tab1_title']; ?>" required>
                                     </div>
-                                    <div>
-                                        <label>Description</label>
-                                        <textarea class="form-control textarea" name="tab1_description"><?= $privacy['tab1_description']; ?></textarea>
+                                    <div> 
+                                
+    
+                            <label>Description</label>
+                                        <textarea class="form-control textarea summernote" name="tab1_description"><?= $privacy['tab1_description']; ?></textarea>
+                                         
+
+                                       
                                     </div>
                                     <div class="mt-3 modal-footer">
                                         <button type="submit"  id="update<?= $privacy['id']; ?>" class="btn btn-success">Update</button>
@@ -77,8 +83,11 @@
                         </div>
 
                         <div>
+                       
+                    
                             <label>Description</label>
-                            <textarea  class="form-control textarea" name="tab1_description"><?= $term_list['tab1_description']; ?></textarea>
+                            <textarea  class="form-control textarea summernote" name="tab1_description"><?= $term_list['tab1_description']; ?></textarea>
+                           
                         </div>
                          <div class="mt-3 modal-footer">
                             <button type="submit"  id="update<?= $term_list['id']; ?>" class="btn btn-success">Update</button>
@@ -113,8 +122,12 @@
                                         <input type="text" class="form-control" name="tab1_title" value="<?= $cookie_list['tab1_title']; ?>" required>
                                     </div>
                                     <div>
+                                   
+                                          
                                         <label>Description</label>
-                                        <textarea class="form-control textarea" name="tab1_description"><?= $cookie_list['tab1_description']; ?></textarea>
+                                        <textarea class="form-control textarea summernote" name="tab1_description"><?= $cookie_list['tab1_description']; ?></textarea>
+
+                                     
                                     </div>
                                     <div class="mt-3 modal-footer">
                                         <button type="submit"  id="update<?= $cookie_list['id']; ?>" class="btn btn-success">Update</button>

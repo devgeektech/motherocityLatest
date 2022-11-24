@@ -1,17 +1,5 @@
 <?php include 'include/header.php'; ?>
 <?php include 'include/sidebar.php'; ?>
-
-<!-- include libraries(jQuery, bootstrap) -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
-
-<!-- include codemirror (codemirror.css, codemirror.js, xml.js, formatting.js) -->
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.css">
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.css">
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/mode/xml/xml.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/2.36.0/formatting.js"></script>
 <style>
   a.blogfeatureimage {
     margin-top: 24px;
@@ -143,11 +131,11 @@
                                                                         </div>
                                                                         <div>
                                                                             <label>Description</label>
-                                                                            <textarea class="form-control textarea" name="description"><?= $value['description']; ?></textarea>
+                                                                            <textarea class="form-control textarea summernote" name="description"><?= $value['description']; ?></textarea>
                                                                         </div>
                                                                         <div>
                                                                             <label>Summary</label>
-                                                                            <textarea class="form-control textarea" name="summary"><?= $value['summary']; ?></textarea>
+                                                                            <textarea class="form-control textarea summernote1" name="summary"><?= $value['SUMMARY']; ?></textarea>
                                                                         </div>
                                                                         <div>
                                                                             <label>Category</label>
@@ -268,7 +256,7 @@
     </div>
     <!-- container-fluid -->
 </div>
-<?php include 'include/footer.php'; ?>
+
 <div class="modal" id="addModal">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -287,19 +275,11 @@
                         </div>
                         <div>
                             <label>Description</label>
-                            <textarea class="form-control textarea"></textarea>
+                            <textarea class="form-control textarea summernote" name="description"></textarea>
                         </div>
-                        <textarea class="form-control" id="summernote">Lorem ipsum</textarea>
-    <script>
-        jQuery(document).ready(function() {
-      
-            jQuery('#summernote').summernote({height: 300});
-        });
-    </script>
-                        
                         <div>
                             <label>Summary</label>
-                            <textarea class="form-control textarea" name="summary"></textarea>
+                            <textarea class="form-control textarea summernote1" name="summary"></textarea>
                         </div>
                         <div>
                             <label>Category</label>
@@ -361,6 +341,8 @@
         </div>
     </div>
 </div>
+
+<?php include 'include/footer.php'; ?>
 <script type="text/javascript">
     function addprice_field()
     {
@@ -401,7 +383,7 @@
           var data = new FormData($('#addBlog')[0]);
     
           $.ajax({
-                url: '<?= base_url()?>/Admin/Blog/add_Blog',
+                url: '<?= base_url()?>/index.php/Admin/Blog/add_Blog',
                 data: data,
                 processData: false,
                 contentType: false,
@@ -439,7 +421,7 @@
     function edit_Blog(el , id) {
       $('.alert-danger').remove();
         $.ajax({
-        url: '<?= base_url() ?>/Admin/Blog/edit_Blog',
+        url: '<?= base_url() ?>/index.php/Admin/Blog/edit_Blog',
         type: 'POST',
         cache:false,
         contentType: false,
@@ -479,7 +461,7 @@
     function deleteRow(id) {
       if(confirm('Are you sure ?')){
         $.ajax ({
-            url: '<?= base_url()?>/Admin/Blog/delete_Blog',
+            url: '<?= base_url()?>/index.php/Admin/Blog/delete_Blog',
             data: {id:id},
             type: 'POST',
             dataType:'json',
@@ -512,7 +494,7 @@
           var category_id = $(this).val();
           //alert(category_id);
           $.ajax({
-              url: "<?= base_url()?>/Admin/Blog/fetch_subcat",
+              url: "<?= base_url()?>/index.php/Admin/Blog/fetch_subcat",
               type: "POST",
               data: {
                   category_id: category_id
@@ -533,7 +515,7 @@
           var category_id = $(this).val();
           //alert(category_id);
           $.ajax({
-              url: "<?= base_url()?>/Admin/Blog/fetch_editsubcat",
+              url: "<?= base_url()?>/index.php/Admin/Blog/fetch_editsubcat",
               type: "POST",
               data: {
                   category_id: category_id
@@ -556,7 +538,7 @@
         //alert(blog_id);
     
          $.ajax({
-              url: "<?= base_url()?>/Admin/Blog/change_blogtype",
+              url: "<?= base_url()?>/index.php/Admin/Blog/change_blogtype",
               type: "POST",
               data: {
                   blog_id:blog_id,blog_val: blog_val

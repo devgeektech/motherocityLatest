@@ -95,7 +95,7 @@
 
                         <div>
                             <label>Description</label>
-                            <textarea class="form-control textarea" name="description"><?= $value['description']; ?></textarea>
+                            <textarea class="form-control textarea summernote" name="description"><?= $value['description']; ?></textarea>
                         </div>
                      
                       <div>
@@ -160,7 +160,7 @@
         </div>
         <!-- container-fluid -->
     </div>
-    <?php include 'include/footer.php'; ?>
+
     <div class="modal" id="addModal">                 
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -187,7 +187,7 @@
 
                         <div>
                             <label>Decription</label>
-                            <textarea class="form-control textarea" name="description"></textarea>
+                            <textarea class="form-control textarea summernote" name="description"></textarea>
                         </div>
                         <div>
                           <label>Start Days</label>
@@ -209,6 +209,7 @@
                 </div>
               </div>
             </div>
+            <?php include 'include/footer.php'; ?>
 <script type="text/javascript">
 
 function addStage(event) {
@@ -217,7 +218,7 @@ function addStage(event) {
         var data = new FormData($('#addStage')[0]);
 
         $.ajax({
-              url: '<?= base_url()?>/Admin/Stage_management/addStage',
+              url: '<?= base_url()?>/index.php/Admin/Stage_management/addStage',
               data: data,
               processData: false,
               contentType: false,
@@ -249,7 +250,7 @@ function addStage(event) {
  function edit_stage(el , id) {
     $('.alert-danger').remove();
       $.ajax({
-      url: '<?= base_url() ?>/Admin/Stage_management/edit_stage',
+      url: '<?= base_url() ?>/index.php/Admin/Stage_management/edit_stage',
       type: 'POST',
       cache:false,
       contentType: false,
@@ -258,7 +259,7 @@ function addStage(event) {
       dataType: 'json',
       beforeSend: function() {        
         $('#update'+id).prop('disabled' , true);
-        $('#update'+id).text('Processing..');
+        $('#update'+id).text('Processing..'); 
       },
       success : function(res){
         $('#update'+id).prop('disabled' , false);

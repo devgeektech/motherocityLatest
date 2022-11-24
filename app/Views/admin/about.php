@@ -41,7 +41,7 @@
 
                         <div>
                             <label>Description</label>
-                            <textarea  class="form-control textarea" name="tab1_description"><?= $what['tab1_description']; ?></textarea>
+                            <textarea  class="form-control textarea summernote" name="tab1_description"><?= $what['tab1_description']; ?></textarea>
                         </div>
                          
                         <div class="mt-3 modal-footer">
@@ -80,7 +80,7 @@
 
                         <div>
                             <label>Description</label>
-                            <textarea  class="form-control textarea" name="tab1_description"><?= $who['tab1_description']; ?></textarea>
+                            <textarea  class="form-control textarea summernote" name="tab1_description"><?= $who['tab1_description']; ?></textarea>
                         </div>
                          
                         <div class="mt-3 modal-footer">
@@ -119,7 +119,7 @@
 
                         <div>
                             <label>Description</label>
-                            <textarea  class="form-control textarea" name="tab1_description"><?= $why['tab1_description']; ?></textarea>
+                            <textarea  class="form-control textarea summernote" name="tab1_description"><?= $why['tab1_description']; ?></textarea>
                         </div>
                          
                         <div class="mt-3 modal-footer">

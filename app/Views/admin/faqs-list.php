@@ -110,7 +110,7 @@
 
                         <div>
                             <label>Description</label>
-                            <textarea  class="form-control textarea" name="description"><?= $value['description']; ?></textarea>
+                            <textarea  class="form-control textarea summernote" name="description"><?= $value['description']; ?></textarea>
                         </div>
 
                  <div>
@@ -168,7 +168,7 @@
         </div>
         <!-- container-fluid -->
     </div>
-    <?php include 'include/footer.php'; ?>
+  
     <div class="modal" id="addModal">                 
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -207,7 +207,7 @@
 
                 <div>
                     <label>Description</label>
-                    <textarea class="form-control textarea" name="description"></textarea>
+                    <textarea class="form-control textarea summernote" name="description"></textarea>
                 </div>
 
                 <div>
@@ -239,7 +239,7 @@
             
         </div>
         </div>
-    </div>
+    </div>  <?php include 'include/footer.php'; ?>
 <script type="text/javascript">
 function addfaqs(event) {
         event.preventDefault();

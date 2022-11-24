@@ -115,7 +115,7 @@
 
         <div>
             <label>Body</label>
-            <textarea class="form-control textarea" name="description"><?= $value['description']; ?></textarea>
+            <textarea class="form-control textarea summernote" name="description"><?= $value['description']; ?></textarea>
         </div>
 
         <!-- <div>
@@ -252,7 +252,7 @@
         </div>
         <!-- container-fluid -->
     </div>
-    <?php include 'include/footer.php'; ?>
+    
     <div class="modal" id="addModal">                 
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -274,7 +274,7 @@
 
                 <div>
                     <label>Body</label>
-                    <textarea class="form-control textarea" name="description"></textarea>
+                    <textarea class="form-control textarea summernote" name="description"></textarea>
                 </div>
                <!--  <div>
                     <label>Date</label>
@@ -360,7 +360,7 @@
             
         </div>
         </div>
-    </div>
+    </div><?php include 'include/footer.php'; ?>
 <script type="text/javascript">
 
   function addprice_field()
@@ -395,7 +395,7 @@ function addTips(event) {
         var data = new FormData($('#addTips')[0]);
 
         $.ajax({
-              url: '<?= base_url()?>/Admin/Tips/add_Tips',
+              url: '<?= base_url()?>/index.php/Admin/Tips/add_Tips',
               data: data,
               processData: false,
               contentType: false,
@@ -433,7 +433,7 @@ function addTips(event) {
  function edit_Tips(el , id) {
     $('.alert-danger').remove();
       $.ajax({
-      url: '<?= base_url() ?>/Admin/Tips/edit_Tips',
+      url: '<?= base_url() ?>/index.php/Admin/Tips/edit_Tips',
       type: 'POST',
       cache:false,
       contentType: false,
